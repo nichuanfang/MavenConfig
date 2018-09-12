@@ -34,7 +34,11 @@
     <!--配置静态资源-->
     <!--mapping:请求的路径&#45;&#45;包含test的所有请求;location:webapp下的哪个目录的所有文件(包含子文件)-->
     <mvc:resources mapping="/js/**" location="/js/"/>
-
+	
+	<!--配置文件解析器-->
+    <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="5242880"/>
+    </bean>
 
 
 </beans>
