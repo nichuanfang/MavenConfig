@@ -33,6 +33,7 @@
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
         <jsp-api.version>2.2</jsp-api.version>
         <servlet-api.version>2.5</servlet-api.version>
+        <aopalliance.version>1.0</aopalliance.version>
     </properties>
 
     <dependencies>
@@ -167,6 +168,12 @@
             <artifactId>servlet-api</artifactId>
             <version>${servlet-api.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <!--aopalliance -->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance.version}</version>
         </dependency>
 
     </dependencies>
